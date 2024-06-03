@@ -374,14 +374,14 @@ html {
 .layout-mobile .itemTags,
 .layout-mobile .itemExternalLinks,
 .layout-mobile .trackSelections,
-.layout-mobile .itemName.originalTitle,
+/*.layout-mobile .itemName.originalTitle,*/
 .layout-mobile .directorsGroup,
 .layout-mobile .writersGroup,
 .layout-mobile .studiosGroup,
 .layout-mobile #seriesAirTime,
 /*.layout-mobile .itemName.parentNameLast,*/
 .layout-mobile .itemName.parentNameLast.withOriginalTitle,
-.layout-mobile .itemName.originalTitle,
+/*.layout-mobile .itemName.originalTitle,*/
 .layout-mobile .tagline,
 .layout-mobile .itemTags {
     display: none;
