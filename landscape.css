@@ -374,14 +374,14 @@ html {
 .layout-mobile .itemTags,
 .layout-mobile .itemExternalLinks,
 .layout-mobile .trackSelections,
-.layout-mobile .itemName.originalTitle,
+/*.layout-mobile .itemName.originalTitle,*/
 .layout-mobile .directorsGroup,
 .layout-mobile .writersGroup,
 .layout-mobile .studiosGroup,
 .layout-mobile #seriesAirTime,
-.layout-mobile .itemName.parentNameLast,
-.layout-mobile .itemName.parentNameLast.withOriginalTitle,
-.layout-mobile .itemName.originalTitle,
+/*.layout-mobile .itemName.parentNameLast,*/
+/*.layout-mobile .itemName.parentNameLast.withOriginalTitle,*/
+/*.layout-mobile .itemName.originalTitle,*/
 .layout-mobile .tagline,
 .layout-mobile .itemTags {
     display: none;
@@ -492,6 +492,13 @@ html {
 .layout-mobile .listItem-content .listItemImage-large .listItemImageButton, .listItemIndicators {
   font-size: 1em!important;
 }
+
+/*if the logo is present on the details page and loaded hide the title so it doesnt duplicate and look weird*/
+#itemDetailPage .itemName.infoText.parentNameLast > bdi:nth-child(1) {display: none;}
+.hide+.detailPageWrapperContainer .itemName > bdi:nth-child(1) {display: block !important;}
+/*the same but for the single episodes link back title*/
+#itemDetailPage .parentName > bdi:nth-child(1) {display: none;}
+.hide+.parentName > bdi:nth-child(1) {display: block !important;}
 
 .layout-mobile .listItem-bottomoverview {
   font-size: 100%;
