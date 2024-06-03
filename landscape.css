@@ -493,6 +493,13 @@ html {
   font-size: 1em!important;
 }
 
+/*if the logo is present on the details page and loaded hide the title so it doesnt duplicate and look weird*/
+#itemDetailPage .itemName.infoText.parentNameLast > bdi:nth-child(1) {display: none;}
+.hide+.detailPageWrapperContainer .itemName > bdi:nth-child(1) {display: block !important;}
+/*the same but for the single episodes link back title*/
+#itemDetailPage .parentName > bdi:nth-child(1) {display: none;}
+.hide+.parentName > bdi:nth-child(1) {display: block !important;}
+
 .layout-mobile .listItem-bottomoverview {
   font-size: 100%;
 }
